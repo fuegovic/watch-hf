@@ -11,7 +11,8 @@ TOKEN = os.getenv("TOKEN")
 OWNER = os.getenv("OWNER")
 NAME = os.getenv("NAME")
 
-# Create a Flask app
+api = HfApi()
+
 app = Flask(__name__)
 
 # Define a route to handle webhook requests
@@ -19,6 +20,7 @@ app = Flask(__name__)
 def webhook():
     # Get the JSON data from the request
     data = request.json
+    print (data)
     # Parse the message from the data
     message = data['message']
     # Split the message by newline characters
