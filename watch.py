@@ -47,4 +47,4 @@ port=os.getenv('SERVER_PORT')
 
 # Run the app
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=os.getenv('SERVER_PORT'), debug=False)
+    app.run(host='0.0.0.0', port=os.getenv('SERVER_PORT'), debug=os.getenv('DEBUG', 'False'))
