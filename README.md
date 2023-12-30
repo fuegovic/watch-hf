@@ -30,8 +30,8 @@ Follow these steps to set up the project:
   - `OWNER`: the owner of the Hugging Face Space.
   - `NAME`: the name of the Hugging Face Space
 
-- Run `docker-compose up -d` to start the webhook server and the services.
-- Configure Watchtower and Uptime Kuma to send notifications to the webhook server, using the URLs `http://localhost:5000/webhook`.
+- Run `python watch.py` to start the webhook server and the services.
+- Configure Watchtower and Uptime Kuma to send notifications to the webhook server, using the URL `http://localhost:5000/webhook`.
 
 ## License
 
