@@ -1,4 +1,4 @@
-# watch-hf
+# watch-hf 🤗👀
 
 A webhook server that automates the update and restart of Hugging Face Spaces.
 
