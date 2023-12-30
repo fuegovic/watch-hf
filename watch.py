@@ -1,6 +1,5 @@
 # pylint: skip-file
 import os
-import time
 from dotenv import load_dotenv
 from flask import Flask, request
 from huggingface_hub import HfApi
@@ -73,4 +72,4 @@ def webhook():
 
 # Run the app
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=os.getenv('SERVER_PORT'), debug=os.getenv('DEBUG', 'false'))
+    app.run(host='0.0.0.0', port=os.getenv('SERVER_PORT', '5000'), debug=os.getenv('DEBUG', 'false'))
